@@ -5,6 +5,7 @@ URL: http://127.0.0.1:8000/api/matrix/multiply/
 Method: GET
 
 Body:
+```
 {
     "matrix1":[
         [3, 55, 2],
@@ -16,8 +17,9 @@ Body:
         [0, 4]
     ]
 }
-
+```
 Result:
+```
 {
     "result": [
         [
@@ -31,3 +33,4 @@ Result:
     ],
     "success": true
 }
+```
