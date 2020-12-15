@@ -91,7 +91,7 @@ class MatrixTest extends TestCase
         $matrix2 = [[1, 2, 3], [2, -4, 5], [1, 0, 3]];
 
         $this->getJson(route('api.matrix.multiply', compact('matrix1', 'matrix2')))->assertJsonFragment([
-            'result' => [["-F","H","V"],["-L","E","K"]]
+            'result' => [["E","K","NaN"],["H","NaN","V"]]
         ]);
 
     }
